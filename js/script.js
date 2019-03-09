@@ -1,6 +1,12 @@
 $(document).ready(() => {
   $('#search_form').on('submit', (e) => {
     let searchText = $('#searchText').val();
+    // validates that there is an entry
+    if(searchText === "") {
+      window.alert('Oops! You must enter a name of movie!');
+      return;
+    }
+
     getMovies(searchText);
     e.preventDefault();
   });
