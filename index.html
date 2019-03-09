@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Info</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><h5>Cine<span id="success">Search</span></h5></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h3 id="uppercase">Search <h4>Movies <i class="fas fa-film"></h4></i></h3>
+        <form id="search_form">
+          <input type="text" name="mainForm" class="form-control" id="searchText" placeholder="Movie title...">
+          <input type="submit" name="mainForm" value="search" class="btn btn-success btn-sm" id="main-btn" required>
+          <input type="reset" name="mainForm" value="clear search" class="btn btn-secondary btn-sm" id="main-btn">
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="movies" class="row">
+
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type='text/javascript' src='/js/config.js'></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/js/script.js">
+
+    </script>
+  </body>
+</html>

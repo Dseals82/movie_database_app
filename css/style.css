@@ -1,0 +1,38 @@
+#movies img, #movie img{
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+#uppercase {
+  text-transform: uppercase;
+}
+
+#main-btn {
+  margin: 10px 2px 0 0;
+}
+
+#success {
+  color: #AEEA00;
+}
+
+#border_bottom {
+  border-bottom: 2px solid grey;
+}
+
+.fa-film {
+  color: #AEEA00;
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 385px;
+  }
+
+  #movies .col-md-3 img{
+    height: 235px;
+  }
+
+  #movies img, #movie img{
+    width: 100%;
+  }
+}
